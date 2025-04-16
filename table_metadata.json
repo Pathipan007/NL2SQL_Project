@@ -1,0 +1,28 @@
+{
+  "orders": {
+    "columns": {
+      "order_id": "INT",
+      "user_id": "INT",
+      "amount": "FLOAT",
+      "date": "DATE"
+    },
+    "relationships": {
+      "user_id": "users.user_id"
+    }
+  },
+  "users": {
+    "columns": {
+      "user_id": "INT",
+      "name": "VARCHAR",
+      "signup_date": "DATE"
+    }
+  },
+  "products": {
+    "columns": {
+      "product_id": "INT",
+      "name": "VARCHAR",
+      "category": "VARCHAR",
+      "price": "FLOAT"
+    }
+  }
+}
